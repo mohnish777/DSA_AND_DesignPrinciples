@@ -1,0 +1,13 @@
+
+
+val job = launch{
+        // the code has to be cooperative in order to get cancelled..
+}
+
+job.cancel() // If coroutine is cooperative then cancel it
+
+job.join() // waits for the coroutine to finish
+
+// If coroutine is cooperative then cancel it else, if it is not cooperative then wait for the coroutine
+// to finish
+job.cancelAndJoin()
