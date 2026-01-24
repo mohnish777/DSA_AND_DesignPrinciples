@@ -40,3 +40,13 @@ fun main(args: Array<String>) {
     groupAnagrams(arrayOf())
 
 }
+
+// time complexity = O(n x k)
+// O(26) -> O(1)
+// hash map operation -> O(1)
+// total - n x k x 1 = O(NxK)
+
+// Space complexity
+// worst case all elements distinct and K as length of each string, key generation(26) is constant and not stored (temporary)
+// so total no of keys N and length of each string K
+// O(NxK)
