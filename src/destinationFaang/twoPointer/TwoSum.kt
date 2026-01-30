@@ -26,4 +26,5 @@ fun twoSum(numbers: IntArray, target: Int): IntArray {
 
 fun main() {
     println(twoSum(intArrayOf(2,7,11,15), 9))
+//    println(twoSum(intArrayOf(-1,-2,-3,-4,-5), -8))
 }
