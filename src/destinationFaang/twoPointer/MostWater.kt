@@ -1,6 +1,9 @@
 package destinationFaang.twoPointer
 
 class MostWater {
+    fun mostWater() {
+        
+    }
 }
 
 
