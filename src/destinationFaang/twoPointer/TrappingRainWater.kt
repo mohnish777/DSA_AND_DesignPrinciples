@@ -1,5 +1,7 @@
 package destinationFaang.twoPointer
 
+// Leetcode - 42
+// 6hrs: 20 mins
 class TrappingRainWater {
 
     fun trappingRainWater(height : IntArray) : Int {
@@ -32,3 +34,6 @@ fun main() {
     println(TrappingRainWater().trappingRainWater(intArrayOf(0,1,0,2,1,0,1,3,2,1,2,1)))
     println(TrappingRainWater().trappingRainWater(intArrayOf(4,2,0,3,2,5)))
 }
+
+// time complexity = O(N)
+// space complexity  = O(1)
