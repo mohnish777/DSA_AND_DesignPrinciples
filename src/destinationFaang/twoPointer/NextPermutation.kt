@@ -7,3 +7,8 @@ class NextPermutation {
         return intArrayOf()
     }
 }
+
+
+fun main() {
+    
+}
