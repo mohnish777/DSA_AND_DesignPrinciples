@@ -56,3 +56,7 @@ fun main() {
     println(NextPermutation().nextPermutation(intArrayOf(3, 2, 1)).contentToString())
     println(NextPermutation().nextPermutation(intArrayOf(3)).contentToString())
 }
+
+
+// time complexity = O(3N) = O(N)
+// space complexity = O(1) 
