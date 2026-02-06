@@ -21,4 +21,5 @@ fun main() {
     println(removeDuplicates.removeDuplicates(intArrayOf(1,2,3,4,5)))
     println(removeDuplicates.removeDuplicates(intArrayOf(1,2,3,4,5)))
     println(removeDuplicates.removeDuplicates(intArrayOf(1,1,2)))
+    println(removeDuplicates.removeDuplicates(intArrayOf(1,1,2,2,2,3)))
 }
