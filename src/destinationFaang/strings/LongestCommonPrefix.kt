@@ -6,3 +6,8 @@ class LongestCommonPrefix {
 
     }
 }
+
+
+fun main() {
+    
+}
