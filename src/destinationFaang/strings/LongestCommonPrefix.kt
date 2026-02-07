@@ -1,4 +1,4 @@
 package destinationFaang.strings
 
-class code1 {
+class LongestCommonPrefix {
 }
