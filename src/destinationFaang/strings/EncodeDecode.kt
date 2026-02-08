@@ -1,5 +1,7 @@
 package destinationFaang.strings
 
+// Leetcode 271
+// 7hrs 27 mins
 class EncodeDecode {
 
     fun encode(strs: List<String>): String {
@@ -54,3 +56,6 @@ fun main() {
 // Expected: ["", ""]
 
 }
+
+// time complexity = O(2N) = O(N)
+// space complexity = O(1)
