@@ -78,17 +78,17 @@ fun main() {
     val sol = LongestPalindromicSubstring()
 
     val tests = listOf(
-//        "babad",
-//        "cbbd",
-//        "a",
+        "babad",
+        "cbbd",
+        "a",
         "",
-//        "aa",
-//        "ab",
-//        "abba",
-//        "noon",
-//        "racecar",
-//        "forgeeksskeegfor",
-//        "abaxyzzyxf"
+        "aa",
+        "ab",
+        "abba",
+        "noon",
+        "racecar",
+        "forgeeksskeegfor",
+        "abaxyzzyxf"
     )
 
     for (t in tests) {
@@ -97,8 +97,8 @@ fun main() {
     }
     println("+++++++++++++")
     for (t in tests) {
-//        val result = sol.longestPalindromeSubstring2(t)
-//        println("Input: \"$t\" -> Output: \"$result\"")
+        val result = sol.longestPalindromeSubstring2(t)
+        println("Input: \"$t\" -> Output: \"$result\"")
     }
 
 
