@@ -101,5 +101,7 @@ fun main() {
         println("Input: \"$t\" -> Output: \"$result\"")
     }
 
-
 }
+
+// time complexity = O(N^2)
+// space complexity  = O(1) as we are defining couple of variables that all.
