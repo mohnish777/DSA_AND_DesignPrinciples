@@ -40,36 +40,36 @@ class LongestPalindromicSubstring {
         return PalResult(len, subString)
     }
 
-//    fun longestPalindromeSubstring2(str: String) : String {
-//        if (str.length < 2) return str
-//        var l = 0
-//        var r = 0
-//
-//        for (i in str.indices) {
-//            val len1 = checkPalindrome2(str, i, i)
-//            val len2 = checkPalindrome2(str, i, i+1)
-//            val len = maxOf(len1, len2)
-//            if (len > (r - l + 1)) {
-//                l = i - (len -1)/2
-//                r = i + (len/2)
-//            }
-//        }
-//
-//        return str.substring(l, r+1)
-//    }
-//
-//    fun checkPalindrome2(str: String, left:Int, right:Int): Int {
-//        var l = left
-//        var r = right
-//        while (l >=0 && r< str.length && str[l] == str[r]) {
-//            l--
-//            r++
-//        }
-//        // l and r are step past the palindrome i.e i value is lesser and r is more
-//        val start = l+1
-//        val end = r - 1
-//        return end - start + 1
-//    }
+    fun longestPalindromeSubstring2(str: String) : String {
+        if (str.length < 2) return str
+        var l = 0
+        var r = 0
+
+        for (i in str.indices) {
+            val len1 = checkPalindrome2(str, i, i)
+            val len2 = checkPalindrome2(str, i, i+1)
+            val len = maxOf(len1, len2)
+            if (len > (r - l + 1)) {
+                l = i - (len -1)/2
+                r = i + (len/2)
+            }
+        }
+
+        return str.substring(l, r+1)
+    }
+
+    fun checkPalindrome2(str: String, left:Int, right:Int): Int {
+        var l = left
+        var r = right
+        while (l >=0 && r< str.length && str[l] == str[r]) {
+            l--
+            r++
+        }
+        // l and r are step past the palindrome i.e i value is lesser and r is more
+        val start = l+1
+        val end = r - 1
+        return end - start + 1
+    }
  }
 
 
