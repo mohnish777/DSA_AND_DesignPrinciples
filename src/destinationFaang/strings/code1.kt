@@ -6,6 +6,10 @@ class code1 {
     }
 
     fun code2() {
+
+    }
+
+    fun code3() {
         
     }
 }
