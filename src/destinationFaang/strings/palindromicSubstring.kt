@@ -1,6 +1,8 @@
 package destinationFaang.strings
 
 
+// leetcode -  647
+
 fun palindromicSubstring(str: String): Int {
     var ans  = 0
     for (i in str.indices) {
