@@ -25,3 +25,6 @@ fun mergeSort(nums1: IntArray, m: Int, nums2: IntArray, n: Int): Unit {
 fun main() {
     mergeSort(nums1 = intArrayOf(1,2,3,0,0,0), m = 3, nums2 = intArrayOf(2,5,6), n = 3)
 }
+
+// time complexity O(M+N)
+//space complexity O(1)

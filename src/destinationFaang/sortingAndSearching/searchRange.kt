@@ -2,7 +2,7 @@ package destinationFaang.sortingAndSearching
 
 // find the first and the last position in the sorted array
 
-// leetcode - 34 - 8hrs - 45 mins
+// leetcode - 34 ,  8hrs - 45 mins
 
 fun searchRange(nums: IntArray, target: Int): IntArray {
     val first = findBound(nums, target, true)
