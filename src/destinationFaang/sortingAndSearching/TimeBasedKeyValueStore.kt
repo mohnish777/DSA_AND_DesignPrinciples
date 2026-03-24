@@ -2,6 +2,9 @@ package destinationFaang.sortingAndSearching
 
 import java.util.TreeMap
 
+// Leetcode 981
+// 11 hrs
+
 class TimeBasedKeyValueStore {
 
     private val map: HashMap<String, TreeMap<Int, String>> = HashMap<String, TreeMap<Int, String>>()
@@ -72,3 +75,23 @@ fun main() {
     println(tm4.get("key", 3))  // Expected: v3
     println(tm4.get("key", 100)) // Expected: v3
 }
+
+/*
+Time complexity
+n = total number of set calls
+k = number of timestamps for a single key
+m = number of unique keys
+
+Outer layer → HashMap (O(1) average)
+Inner layer → TreeMap (Red-Black Tree → O(log k))
+
+HashMap lookup → O(1)
+TreeMap insertion → O(log k)
+
+worst case
+O(log n)
+
+................
+space complexity
+O(n)
+* */

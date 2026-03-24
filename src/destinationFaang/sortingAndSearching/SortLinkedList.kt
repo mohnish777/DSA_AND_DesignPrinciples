@@ -112,3 +112,6 @@ fun main() {
         println("---------------")
     }
 }
+
+// time complexity O(N log N)
+// space complexity O(log N)
