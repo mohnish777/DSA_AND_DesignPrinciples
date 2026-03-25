@@ -1,6 +1,7 @@
 package destinationFaang.LinkedList
 
 import java.util.PriorityQueue
+import kotlin.math.min
 
 
 // leet code 23
@@ -106,6 +107,47 @@ class MergeKSortedList2 {
     | Approach            | Time           | Space    |
     | ------------------- | -------------- | -------- |
     | Your (value heap)   | O(n log n)     |  O(n)    | 1st solution
-    | Optimal (node heap) | O(n log k)     |  O(k)    | 2nd soluton
+    | Optimal (node heap) | O(n log k)     |  O(k)    | 2nd solution
 */
+}
+
+
+// brute force
+class MergeKSortedList3 {
+
+    inner class ListNode(val value: Int) {
+        var next: ListNode? = null
+    }
+
+    fun mergeKList(lists: Array<ListNode?>): ListNode? {
+
+        val dummy = ListNode(0)
+        var merge: ListNode = dummy
+
+        while(true) {
+            var minIndex = - 1
+
+            for (i in 0 until lists.size) {
+                if (lists[i]!=null) {
+                    if(minIndex == -1 || lists[i]!!.value < lists[minIndex]!!.value) {
+                        minIndex = i
+                    }
+                }
+            }
+
+            if (minIndex == -1) {
+                break
+            }
+
+            merge.next = lists[minIndex]
+            merge = merge.next!!
+
+            lists[minIndex] = lists[minIndex]!!.next
+        }
+
+        return dummy.next
+    }
+
+    // time complexity = O(n X k)
+    // space complexity = O(1)
 }
