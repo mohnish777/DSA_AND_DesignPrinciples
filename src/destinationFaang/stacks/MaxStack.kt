@@ -2,7 +2,7 @@ package destinationFaang.stacks
 
 
 // Leet code 716
-// 12 hrs 55 mins - https://leetcode.ca/all/716.html
+// 14 hrs 55 mins - https://leetcode.ca/all/716.html
 class MaxStack {
     private val stack: ArrayDeque<Int> = ArrayDeque<Int>()
     private val maxStack: ArrayDeque<Int> = ArrayDeque<Int>()

@@ -2,7 +2,7 @@ package destinationFaang.stacks
 
 
 // leet code 155
-// 12hrs 40 mins
+// 14hrs 40 mins
 class MinStack {
 
     private var head: Node? = null
