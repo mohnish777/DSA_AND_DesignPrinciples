@@ -2,7 +2,7 @@ package destinationFaang.Queue
 
 
 // Leetcode 232
-// 17 hrs, 02 mins.
+// 15 hrs, 53 mins.
 class ImplementQueueUsingStack {
 
     private val inStack: ArrayDeque<Int> = ArrayDeque<Int>()

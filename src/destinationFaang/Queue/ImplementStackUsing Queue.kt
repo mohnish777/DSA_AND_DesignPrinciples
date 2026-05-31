@@ -1,5 +1,7 @@
 package destinationFaang.Queue
 
+//17 hrs 3 mins - Leet code 225
+
 class ImplementStackUsingQueue {
     var q1: ArrayDeque<Int> = ArrayDeque<Int>()
     var q2: ArrayDeque<Int> = ArrayDeque<Int>()

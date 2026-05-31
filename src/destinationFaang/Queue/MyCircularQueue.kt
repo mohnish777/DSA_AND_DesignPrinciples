@@ -1,5 +1,7 @@
 package destinationFaang.Queue
 
+// 17hrs 15 mins
+// leet code 622
 class MyCircularQueue1(k: Int) {
 
     val data: IntArray = IntArray(k)
@@ -92,4 +94,24 @@ class MyCircularQueue2(k: Int) {
     fun front(): Int {
         return if (isEmpty()) -1 else data[front]
     }
+
+   /* Why O(1)?
+    No shifting of elements ❌
+    Only simple operations:
+    index access
+    increment
+    modulo
+
+    time
+    enQueue  → O(1)
+    deQueue  → O(1)
+    Front    → O(1)
+    Rear     → O(1)
+    isEmpty  → O(1)
+    isFull   → O(1)
+
+    space
+    O(k)
+    */
 }
+
