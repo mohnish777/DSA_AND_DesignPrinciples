@@ -15,6 +15,7 @@ class CarFleet {
 
         // sort by position descending
         cars.sortWith ( compareByDescending { it[0] } )
+        //cars.sortWith { a, b -> (b[0] - a[0]).toInt() } - another way.
 
         var count = 0
         var prevTime = 0.0
