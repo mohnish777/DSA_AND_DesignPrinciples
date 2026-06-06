@@ -3,7 +3,7 @@ package destinationFaang.heap
 import java.util.PriorityQueue
 import java.util.TreeMap
 
-// leetcode 1086
+// leetcode 1086 - https://github.com/doocs/leetcode/blob/main/solution/1000-1099/1086.High%20Five/README_EN.md
 // 19hrs 10 mins
 
 class HighFive {
