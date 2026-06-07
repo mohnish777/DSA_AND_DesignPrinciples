@@ -18,7 +18,7 @@ class kthLargestElementInAStream(k: Int, nums: IntArray) {
     }
 
     fun add(value: Int): Int {
-        if (minHeap.size < k){
+        if (minHeap.size < k) {
             minHeap.add(value)
         } else if (minHeap.peek() < value) {
             minHeap.poll()
