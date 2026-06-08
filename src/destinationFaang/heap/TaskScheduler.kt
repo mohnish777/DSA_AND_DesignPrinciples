@@ -12,7 +12,7 @@ class TaskScheduler {
         }
 
         val maxHeap: PriorityQueue<Int> = PriorityQueue<Int>{ a, b -> b - a}
-        val coolDown: ArrayDeque<Pair<Int,Int>> = ArrayDeque()
+        val coolDown: ArrayDeque<Pair<Int,Int>> = ArrayDeque() // Pair(CharRemaining, CoolDownTime)
         var time = 0
 
         for (count in freq) {
