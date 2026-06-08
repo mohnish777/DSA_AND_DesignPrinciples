@@ -45,27 +45,54 @@ LeetCode 621 - Task Scheduler Complexity
 
 N = total number of tasks
 K = number of unique task types
+T = total time intervals returned by the algorithm
+  = task intervals + idle intervals
 
-For LeetCode, K <= 26.
+For LeetCode:
+K <= 26
 
-Time:
-- no of tasks: O(N)
-- Heap operations: O(N log K)
-- Since K <= 26, log K is constant
-
-Final time:
+Counting frequencies:
 O(N)
 
-Space:
-- Frequency array: O(26)
-- Max heap: O(K)
-- Cooldown queue: O(K)
-- Since K <= 26
+Adding counts to heap:
+O(K log K)
 
-Final space:
-O(1)
+Main while loop:
+while heap is not empty OR cooldown is not empty
+
+The loop runs T times.
+
+Inside each iteration:
+time++                       -> O(1)
+maxHeap.poll()               -> O(log K)
+coolDown.addLast(...)        -> O(1)
+coolDown.removeFirst()       -> O(1)
+maxHeap.add(...)             -> O(log K)
+
+So each iteration is:
+O(log K)
+
+Main while loop complexity:
+O(T log K)
+
+Since K <= 26:
+O(T log K) becomes O(T)
+
+Overall time:
+O(N + K log K + T log K)
+
+For LeetCode, because K <= 26:
+O(N + T)
+--------------------------------
+Space:
+frequency array -> O(26)
+max heap        -> O(K)
+cooldown queue  -> O(K)
+
+For LeetCode:
+Space = O(1)
 
 General case:
-Time:  O(N log K + idleTime)
+Time:  O(N + K log K + T log K)
 Space: O(K)
 */
