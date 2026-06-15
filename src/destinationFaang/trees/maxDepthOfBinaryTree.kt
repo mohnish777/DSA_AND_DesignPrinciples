@@ -4,7 +4,11 @@ package destinationFaang.trees
 // 21hrs 20 mins
 
 class maxDepthOfBinaryTree {
-    inner class TreeNode(val left: TreeNode? = null, val right: TreeNode? = null)
+    inner class TreeNode(
+        val value: Int,
+        val left: TreeNode? = null,
+        val right: TreeNode? = null
+    )
 
     fun maxDepth(root: TreeNode?): Int {
 
