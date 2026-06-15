@@ -17,3 +17,32 @@ class maxDepthOfBinaryTree {
         }
     }
 }
+
+/*
+ LeetCode 104 - Maximum Depth of Binary Tree
+
+Approach:
+Use DFS recursion.
+
+Time Complexity:
+O(n)
+
+Reason:
+Every node is visited once.
+
+Space Complexity:
+O(h)
+
+Reason:
+Recursive call stack depends on tree height.
+
+Balanced tree:
+O(log n)
+
+Skewed tree:
+O(n)
+
+Final:
+Time:  O(n)
+Space: O(h)
+*/
