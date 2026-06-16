@@ -21,3 +21,24 @@ class InvertTree {
         return root
     }
 }
+
+/*
+LeetCode 226 - Invert Binary Tree Complexity
+
+n = number of nodes
+h = height of tree
+
+Time:
+O(n)
+Reason: visit every node once and swap children.
+
+Space:
+O(h)
+Reason: recursion call stack depends on tree height.
+
+Balanced tree:
+O(log n)
+
+Skewed tree:
+O(n)
+* */
