@@ -29,3 +29,25 @@ class BalancedBinaryTree {
         return dfs(root) != -1
     }
 }
+
+/*
+LeetCode 110 - Early Exit
+
+Optimized version:
+- dfs returns height if balanced.
+- dfs returns -1 if unbalanced.
+- If left == -1, return immediately.
+- If right == -1, return immediately.
+
+Time:
+O(n) worst case
+
+Space:
+O(h)
+
+Balanced tree:
+O(log n)
+
+Skewed tree:
+O(n)
+ */
