@@ -31,3 +31,27 @@ class BinaryTreeZigZag {
         return result
     }
 }
+
+
+/*
+LeetCode 103 - Zigzag Level Order Complexity
+
+n = number of nodes
+w = maximum width of tree
+
+Time:
+O(n)
+
+Reason:
+Each node is processed once.
+level.reverse() costs O(level size), but total reverse work across all levels is O(n).
+
+Space:
+O(w) extra space for queue.
+
+Worst case:
+O(n)
+
+Including result output:
+O(n)
+* */
