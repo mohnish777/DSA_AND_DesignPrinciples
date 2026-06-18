@@ -33,3 +33,25 @@ class BinaryTreeRightSideView {
         return result
     }
 }
+
+/*
+LeetCode 199 - Right Side View
+
+Use BFS level order traversal.
+
+For each level:
+- levelSize = queue.size
+- Process exactly levelSize nodes
+- If i == levelSize - 1, this is the last node in that level
+- Add it to result
+
+Time:
+O(n)
+
+Space:
+O(w)
+
+w = max width of tree
+Worst case: O(n)
+
+* */
