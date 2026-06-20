@@ -28,3 +28,26 @@ class DiameterOfBinaryTree {
         return dfs(root).second
     }
 }
+
+/*
+
+LeetCode 543 - Without Global Variable
+
+dfs returns Pair(height, diameter)
+
+For each node:
+height = 1 + max(left.height, right.height)
+
+diameter through current:
+left.height + right.height
+
+best diameter:
+max(left.diameter, right.diameter, diameterThroughCurrent)
+
+Time:
+O(n)
+
+Space:
+O(h)
+
+* */
