@@ -1,7 +1,7 @@
 package destinationFaang.trees
 
 // leet code - 124
-// 1day - 21 mins
+// 1day - 15 mins
 
 class BinaryTreeMaximumPath {
 
