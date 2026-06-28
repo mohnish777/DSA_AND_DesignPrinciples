@@ -18,7 +18,7 @@ class BinaryTreeMaximumPath {
         fun dfs(root: TreeNode?): Int {
             if (root == null) return 0
 
-            // nodes may have negative values, and we dont want to consider negative values
+            // nodes may have negative values, and we don't want to consider negative values
             val leftMax = maxOf(0, dfs(root.left))
             val rightMax = maxOf(0, dfs(root.right))
 
@@ -34,3 +34,33 @@ class BinaryTreeMaximumPath {
         return result
     }
 }
+
+/*
+LeetCode 124 - Recommended Solution
+
+Use DFS with result variable.
+
+dfs(node) returns:
+max downward path from node without split
+
+Why no split in return?
+Parent can only continue through one side.
+
+At each node:
+leftMax = max(dfs(left), 0)
+rightMax = max(dfs(right), 0)
+
+Best path through current node:
+node.val + leftMax + rightMax
+
+Update global result with this value.
+
+Return to parent:
+node.val + max(leftMax, rightMax)
+
+Time:
+O(n)
+
+Space:
+O(h)
+* */
