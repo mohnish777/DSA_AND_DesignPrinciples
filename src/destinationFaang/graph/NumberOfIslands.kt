@@ -15,10 +15,10 @@ class NumberOfIslands {
         )
 
         fun dfs(r: Int, c: Int) {
-            if( r !in 0 until rows ||
+            if (r !in 0 until rows ||
                 c !in 0 until cols ||
                 grid[r][c] == '0'
-                ) {
+            ) {
                 return
             }
             grid[r][c] = '0'
@@ -51,17 +51,46 @@ class NumberOfIslands2 {
         val visited: HashSet<Pair<Int, Int>> = HashSet()
 
         var islands = 0
+        val directions: Array<Pair<Int, Int>> = arrayOf(
+            1 to 0,
+            0 to 1,
+            -1 to 0,
+            0 to -1
+        )
 
+        fun bfs(r: Int, c: Int) {
+            val q = ArrayDeque<Pair<Int, Int>>()
+            q.add(r to c)
 
-        for (r in 0 until rows)  {
+            while (!q.isEmpty()) {
+                val (row, col) = q.removeFirst()
+                for ((dr, dc) in directions) {
+                    val newRow = row + dr
+                    val newCol = col + dc
+                    if (
+                        (newRow in 0 until rows) &&
+                        (newCol in 0 until cols) &&
+                        (grid[newRow][newRow] == '1') &&
+                        !visited.contains(newRow to newCol)
+                    ) {
+                        visited.add(newRow to newCol)
+                        q.addLast(newRow to newCol)
+
+                    }
+                }
+            }
+        }
+
+        for (r in 0 until rows) {
             for (c in 0 until cols) {
                 if (grid[r][c] == '1' && !visited.contains(r to c)) {
                     visited.add(r to c)
                     islands++
-                    bfs(r,c)
+                    bfs(r, c)
                 }
             }
         }
+        return islands
     }
 }
 
