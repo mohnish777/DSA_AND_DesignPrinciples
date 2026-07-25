@@ -46,8 +46,6 @@ class MaxAreaOfIsland1 { //bfs solution
             maxArea = maxOf(maxArea, count)
         }
 
-
-
         for (r in 0 until rows) {
             for (c in 0 until cols) {
                 if (grid[r][c] == 1 && !visited.contains(r to c)) {
