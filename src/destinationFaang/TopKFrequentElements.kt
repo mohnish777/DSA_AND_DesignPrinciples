@@ -36,3 +36,25 @@ fun TopKFrequentElements(nums: IntArray, k: Int): IntArray {
     }
     return ans
 }
+
+/*
+Let:
+n = nums.size
+u = number of unique numbers
+- Frequency map loop: O(n) time
+- Heap loop: runs u times; each add() / poll() costs O(log k)
+  → O(u log k) time
+- Creating answer: O(k) time
+So total:
+Time: O(n + u log k)
+Since u ≤ n, you can also say:
+Time: O(n log k)
+
+
+Space:
+- count map: O(u)
+- Min-heap: O(k)
+- Answer array: O(k)
+Space: O(u + k)
+Usually simplified to O(u), because k ≤ u in this problem.
+* */

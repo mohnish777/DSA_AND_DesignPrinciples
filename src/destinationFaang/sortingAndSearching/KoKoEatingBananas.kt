@@ -2,6 +2,8 @@ package destinationFaang.sortingAndSearching
 
 import kotlin.math.ceil
 
+// leet code 875
+//
 class KoKoEatingBananas {
     fun minEatingSpeed(piles: IntArray, h: Int): Int {
         var left = 1
@@ -14,9 +16,9 @@ class KoKoEatingBananas {
         while (left < right) {
             val mid = left + (right - left) / 2
             if (canFinish(piles, mid, h)) {
-                right = mid
+                right = mid // mid works; search for a smaller valid speed
             } else {
-                left = mid + 1
+                left = mid + 1 // mid fails; must eat faster
             }
         }
         return left

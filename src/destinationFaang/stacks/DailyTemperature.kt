@@ -10,7 +10,7 @@ class DailyTemperature {
         for (i in temperatures.indices) {
             while (!stack.isEmpty() && temperatures[i] > temperatures[stack.last()]) {
                 val index  = stack.removeLast()
-                answer[i] = i - index
+                answer[index] = i - index
             }
             stack.addLast(i)
         }

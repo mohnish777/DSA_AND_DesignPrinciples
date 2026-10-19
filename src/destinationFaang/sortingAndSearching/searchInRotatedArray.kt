@@ -13,7 +13,7 @@ fun searchInRotatedArray(nums: IntArray, target: Int): Int {
 
         if (nums[mid] == target) return mid
 
-        if (nums[left] < nums[mid]) {
+        if (nums[left] <= nums[mid]) {
             if (target < nums[left] || target > nums[mid]) {
                 left = mid + 1
             } else {

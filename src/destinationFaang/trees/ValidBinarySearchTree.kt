@@ -10,7 +10,7 @@ class ValidBinarySearchTree {
     }
 
     fun valid(root: TreeNode?, left: Long, right: Long): Boolean {
-        if (root == null) return false
+        if (root == null) return true
 
         val value = root.value.toLong()
         if (!(value < right && value > left)) {

@@ -1,7 +1,7 @@
 package destinationFaang.slidingWindow
 
-//Leet code 176
-// 5hrs
+//Leet code 76
+// 4hrs 49 mins
 
 
 fun minimumWindowSubstring(s: String, t: String): String {

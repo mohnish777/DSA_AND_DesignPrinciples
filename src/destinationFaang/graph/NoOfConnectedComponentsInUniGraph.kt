@@ -72,7 +72,7 @@ class NoOfConnectedComponentsInUniGraph2 {
 
     fun countComponents(n: Int, edges: Array<IntArray>): Int {
         val par = IntArray(n) { it }
-        val rank = IntArray(n) { 0 }
+        val rank = IntArray(n) { 1 }
 
         fun find(n1: Int): Int {
             var res = n1
