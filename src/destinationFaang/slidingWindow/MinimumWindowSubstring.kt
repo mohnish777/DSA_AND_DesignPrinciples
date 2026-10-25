@@ -31,7 +31,7 @@ fun minimumWindowSubstring(s: String, t: String): String {
             formed++
         }
 
-        while (left <=right && formed == required){
+        while (left <=right && formed == required) {
             val ch = s[left]
 
             if(ans[0] == -1 || right - left +1 < ans[0]) {

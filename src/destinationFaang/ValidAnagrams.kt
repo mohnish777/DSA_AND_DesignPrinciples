@@ -10,7 +10,7 @@ fun validAnagram(s: String, t: String): Boolean {
         return false
     }
 
-    val charCounts = IntArray(26)
+    val charCounts = IntArray(26) // [0,0,0]
 
     for (i in 0 until s.length) {
         charCounts[s[i] - 'a']++

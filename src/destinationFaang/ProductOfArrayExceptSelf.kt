@@ -7,7 +7,7 @@ You must write an algorithm that runs in O(n) time and without using the divisio
 */
 
 fun productOfArrayExceptSelf(nums: IntArray): IntArray {
-    val result = IntArray(nums.size) {1}
+    val result = IntArray(nums.size) { 1 }
 
     var pre = 1
     var post = 1

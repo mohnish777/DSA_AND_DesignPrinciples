@@ -13,14 +13,14 @@ fun TopKFrequentElements(nums: IntArray, k: Int): IntArray {
 
     val counts = HashMap<Int, Int>()
     for (i in 0 until nums.size) {
-        if(!counts.containsKey(nums[i])){
+        if(!counts.containsKey(nums[i])) {
             counts[nums[i]] = 0
         }
         counts[nums[i]] = counts[nums[i]]!! + 1
     }
 
     val heap = PriorityQueue<Int> { a, b ->
-        counts[a]!! - counts[b]!!
+        counts[a]!! - counts[b]!! // less to more - the one which is less stays on top
     }
 
     for (i in counts.keys) {
